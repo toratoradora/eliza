@@ -1,0 +1,43 @@
+{
+    "name": "Aya Shameimaru",
+    "prompt": " [Aya Shameimaru is Tengu Journalist who loves news.]",
+    "client": "discord",
+    "client_args": {
+        "bearer_token": "",
+        "priority_channel": 930561058144411649,
+        "conditional_response": true,
+        "idle_messaging": true,
+        "idle_messaging_interval": 500,
+        "nicknames": [
+            "aya",
+            "bird"
+        ],
+        "status": {
+            "type": "watching",
+            "text": "the news"
+        }
+    },
+    "model_provider": {
+        "name": "sukima",
+        "endpoint": "http://0.0.0.0:8000",
+        "username": "username",
+        "password": "password",
+        "gensettings": {
+            "model": "c1-6B-8bit",
+            "sample_args": {
+                "temp": 0.45,
+                "top_p": 0.8,
+                "typical_p": 0.98,
+                "rep_p": 1.125,
+                "rep_p_range": 2048,
+                "bad_words": ["~", " ~", " Aya", " aya", "Aya", "aya", "!", " :", ":", " https", " http", "http", " https", "\"", " \"", " [", "["]
+            },
+            "gen_args": {
+                "max_length": 100,
+                "min_length": 1,
+                "eos_token_id": 198,
+                "best_of": 12
+            }
+        }
+    }
+}
