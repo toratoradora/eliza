@@ -16,7 +16,8 @@
         "status": {
             "type": "watching",
             "text": "from the bar. ⚖️"
-        }
+        },
+        "context_size": 924
     },
     "model_provider": {
         "name": "sukima",

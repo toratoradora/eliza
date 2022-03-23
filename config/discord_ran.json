@@ -15,7 +15,8 @@
         "status": {
             "type": "listening",
             "text": "Chen playing~"
-        }
+        },
+        "context_size": 924
     },
     "model_provider": {
         "name": "sukima",

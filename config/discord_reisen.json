@@ -15,7 +15,8 @@
         "status": {
             "type": "playing",
             "text": "with the rabbits. 🐰"
-        }
+        },
+        "context_size": 924
     },
     "model_provider": {
         "name": "sukima",
@@ -30,7 +31,7 @@
                 "tfs": 0.9,
                 "rep_p": 1.115,
                 "rep_p_range": 1024,
-                "bad_words": ["~", " ~", " Reisen", " reisen", "reisen"],
+                "bad_words": ["~", " ~", " Reisen", " reisen", "reisen", " ._.", "._."],
                 "logit_biases": [
                     {
                         "id": 13557,
@@ -39,7 +40,11 @@
                     {
                         "id": 3228,
                         "bias": -0.05
-                    }
+                    },
+		    {
+			    "id": 198,
+			    "bias": 0.15
+		    }
                 ],
                 "phrase_biases": [
                     {
